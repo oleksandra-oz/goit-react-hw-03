@@ -7,15 +7,17 @@ const ContactList = ({ contactsData, handleDelete }) => {
     return (
         <div>
       <ul>
-        {contactsData.map(contact => (
-          <Contact 
-            key={contact.id} 
-            id={contact.id} 
-            name={contact.name} 
-            number={contact.number}
-            handleDelete={handleDelete}
-          />
-        ))}
+          {contactsData.map((contact) => {
+            return (
+            <Contact
+              key={contact.id}
+              id={contact.id}
+              name={contact.name}
+              number={contact.number}
+              handleDelete={handleDelete}
+            />
+          )
+        })}
       </ul>
     </div>
 
