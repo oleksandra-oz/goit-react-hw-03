@@ -38,8 +38,8 @@ const addContact = (newContact) => {
   });
 };
   
-const handleDelete = (id) => {
-    setContactsData(contactsData.filter(contact => contact.id !== id));
+const handleDelete = (myId) => {
+    setContactsData(contactsData.filter(contact => contact.id !== myId));
     };
   
   return (

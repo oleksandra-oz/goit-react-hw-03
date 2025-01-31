@@ -1,6 +1,6 @@
-const Contact = ({ name, number, handleDelete
+
+const Contact = ({ name, number, id,  handleDelete
  }) => {
-    
     return (
         <div>
       <ul>
@@ -8,7 +8,7 @@ const Contact = ({ name, number, handleDelete
         <li>Number: {number}</li>
           <button
             type='button'
-            onClick={() => handleDelete(Contact.id)}>Delete</button>
+            onClick={() => handleDelete(id)}>Delete</button>
       </ul>
     </div>
     );

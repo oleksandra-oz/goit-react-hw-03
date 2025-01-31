@@ -2,10 +2,7 @@ import Contact from "../Contact/Contact.jsx";
 
 const ContactList = ({ contactsData, handleDelete }) => {
 
-     
-    
     return (
-        <div>
       <ul>
           {contactsData.map((contact) => {
             return (
@@ -17,9 +14,8 @@ const ContactList = ({ contactsData, handleDelete }) => {
               handleDelete={handleDelete}
             />
           )
-        })}
+          })}
       </ul>
-    </div>
 
     );
 
