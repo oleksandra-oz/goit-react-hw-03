@@ -1,10 +1,8 @@
 import Contact from "../Contact/Contact.jsx";
 
-const ContactList = ({ contactsData, setContactsData }) => {
+const ContactList = ({ contactsData, handleDelete }) => {
 
-     const handleDelete = (id) => {
-    setContactsData(contactsData.filter(contact => contact.id !== id));
-    };
+     
     
     return (
         <div>
